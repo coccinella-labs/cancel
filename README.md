@@ -1,5 +1,7 @@
 # Cancel
 
+[![Release](https://img.shields.io/github/v/release/libnudget/cancel?logo=github&label=latest)](https://github.com/libnudget/cancel/releases)
+
 Cancel in-progress and queued workflow runs for a branch.
 
 ## What it does
