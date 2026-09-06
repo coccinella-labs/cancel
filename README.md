@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Coccinella-Labs/cancel/main/.github/assets/thumbnail.png" alt="cancel" width="100%">
+</p>
+
 # Cancel
 
 [![Release](https://img.shields.io/github/v/release/libnudget/cancel?logo=github&label=latest)](https://github.com/libnudget/cancel/releases)
