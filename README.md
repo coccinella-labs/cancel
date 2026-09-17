@@ -4,7 +4,7 @@
 
 # Cancel
 
-[![Release](https://img.shields.io/github/v/release/libnudget/cancel?logo=github&label=latest)](https://github.com/libnudget/cancel/releases)
+[![Release](https://img.shields.io/github/v/release/coccinella-labs/cancel?logo=github&label=latest)](https://github.com/coccinella-labs/cancel/releases)
 
 Cancel in-progress and queued workflow runs for a branch.
 
@@ -35,7 +35,7 @@ jobs:
           branch=$(gh pr view ${{ github.event.issue.number }} --json headRefName --jq '.headRefName')
           echo "branch=$branch" >> $GITHUB_OUTPUT
 
-      - uses: libnudget/cancel@v1
+      - uses: coccinella-labs/cancel@v1
         with:
           branch: ${{ steps.branch.outputs.branch }}
 ```
@@ -54,7 +54,7 @@ jobs:
     if: github.event.label.name == 'cancel-runs'
     runs-on: ubuntu-latest
     steps:
-      - uses: libnudget/cancel@v1
+      - uses: coccinella-labs/cancel@v1
         with:
           pr_number: ${{ github.event.pull_request.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
